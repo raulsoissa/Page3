@@ -1,7 +1,179 @@
+/* RESET STYLES */
 /* apply a natural box layout model to all elements, but allowing components to change */
 html {
     box-sizing: border-box;
   }
   *, *:before, *:after {
     box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
   }
+
+/* GLOBAL */
+body {
+    text-align: center;
+    font: 300 20px/1.7;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+p{
+    margin-bottom: 40px;
+    line-height: 1.7;
+}
+
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    padding: 80px 0;
+}
+
+.title {
+    text-transform: uppercase;
+    font-size: 60px;
+    margin-bottom: 40px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: lighter;
+    color: #fff;
+}
+
+.btn {
+    border: 2px solid #fff;
+    padding: 15px 40px;
+    display: inline-block;
+    color: #fff;
+    font-size: 20px;
+}
+
+/* HEADER */
+
+.header {
+    height: 450px;
+    background: url('../images/dummy-header.jpg') no-repeat center center/cover;
+}
+
+/* NAVBAR */
+
+.navbar {
+    background: #2c3e50;
+    height: 63px;
+}
+
+.navbar a{
+    color: #fff;
+    padding: 0 18px;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+}
+
+/* ABOUT US */
+.about-us {
+    background: #2c3e50;
+    color: #fff;
+}
+
+.about-us p {
+    max-width: 1055px;
+    margin: 0 auto;
+}
+
+/* SERVICES */
+.services {
+    background: #34495e;
+    color: #fff;
+}
+
+
+.list-services figure{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 150px;
+    height: 175px;
+    flex-flow: column;
+}
+
+.list-services figure:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    z-index: 0;
+    background: #fff;
+    width: 150px;
+    height: 150px;
+}
+
+.list-services img {
+    position: relative;
+    z-index: 1;
+}
+
+.list-services li{
+    padding: 0 30px;
+}
+
+.list-services figcaption {
+    position: relative;
+    right: 0;
+    left: 0;
+    bottom: -40px;
+}
+
+/* PRICES */
+.prices {
+    background: url(../images/dummy-tarifas.jpg) no-repeat center center/cover;
+    color: #fff;
+    text-align: left;
+}
+
+.contain{
+    max-width: 1055px;
+    margin: 0 auto;
+}
+
+.prices p{
+    max-width: 450px;
+}
+
+
+/* LOCATION */
+.location {
+    padding-bottom: 0;
+    color: #34495e;
+    font-size: 20px;
+}
+
+.location h2 {
+    color: #34495e;
+}
+
+.location img{
+    width: 100%;
+}
+
+
+/* MEDIA QUERIES */
+
+@media (max-width: 450px) {
+    .header {
+        height: 250px;
+    }
+
+    .navbar {
+        height: 50px;
+    }
+
+    .navbar a{
+        font-size: 18px;
+    }
+}
+
